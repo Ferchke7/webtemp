@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir ="Itr">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для регистрации и логина</title>
+  <link rel = "stylesheet" href="style.css">
+  <meta name ="viewport" content="width=device-width">
+</head>
+<body>
+<div class ="wrapper">
+    <div class="title-text">
+        <div class ="title login">Логин</div>
+        <div class="title signup">Регистрация</div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    </div>
+
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slider" id ="login" checked>
+            <input type="radio" name="slider" id ="signup">
+
+            <label for="login" class="slide login">Логин</label>
+            <label for="signup" class="slide signup">Регистрация</label>
+            <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="#" class="login">
+               <div class="field">
+                   <input type="text" placeholder="Адресс Email" required>
+               </div>
+                <div class="field">
+                    <input type="password" placeholder="Пароль" required>
+                </div>
+                <div class="pass-link"><a href="#">Забыл пароль?</a> </div>
+                <div class="field">
+                    <input type="submit" value="Войти">
+                </div>
+                <div class="signup-link"><a href="#">Регистрация</a> </div>
+            </form>
+
+            <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Адресс почты" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Пароль" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Подтверждение пароля" required>
+                </div>
+                <div class="field">
+                    <input type="submit" value="Регистрация">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</html>
